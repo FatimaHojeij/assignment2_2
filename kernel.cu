@@ -6,7 +6,7 @@ __global__ void mm_kernel(float* A, float* B, float* C, unsigned int M, unsigned
 
     // TODO
 	unsigned int row = blockIdx.y*blockDim.y + threadIdx.y;
-	unsigned int col = blockIdx.x*blockDim.x + threadIdx.x
+	unsigned int col = blockIdx.x*blockDim.x + threadIdx.x;
 
 
 	if(row<M && col<N){
